@@ -31,9 +31,11 @@ def unfollow():
     f.close()
 def run():
     while True:
-        unfollow()
-        sleep(3600)
+        print("Start Follow")
         follow()
+        sleep(3600)
+        print("Start Unfollow")
+        unfollow()
         sleep(3600)
 
 run()
