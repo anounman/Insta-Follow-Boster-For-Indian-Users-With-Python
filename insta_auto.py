@@ -8,7 +8,7 @@ password =  "password"
 
 
 try:
-    api = Client(myAccount, myPassword)
+    api = Client(username, password)
 except Exception as e :
     print(e)
     sleep(random.randint(200, 300))
@@ -33,9 +33,9 @@ def run():
     while True:
         print("Start Follow")
         follow()
-        sleep(3600)
+        sleep(7200)
         print("Start Unfollow")
         unfollow()
-        sleep(3600)
+        sleep(7200)
 
 run()
